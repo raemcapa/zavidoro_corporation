@@ -98,13 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "val-8": "Calidad",
             "stores-title": "Nuestras <span>Tiendas Nike</span>",
             "stores-desc": "Presencia nacional con ubicaciones estratégicas bajo los últimos conceptos globales de la marca.",
-            "infra-badge1": "Centros de Distribución",
-            "infra-title1": "Nuestros Depósitos",
-            "infra-desc1": "Capacidad logística de primer nivel orientada a abastecer de manera eficiente todas nuestras sucursales de Nike en el país.",
-            "infra-dep1": "Depósito Zavidoro",
-            "infra-dep2": "Depósito Fiscal",
-            "infra-dep3": "Depósito Chaco'i",
-            "infra-dep4": "Depósito de Reservas Zavidoro",
+            "infra-title1": "Logística",
+            "infra-desc1": "Capacidad logística de primer nivel orientada a abastecer de manera eficiente tanto a todas nuestras sucursales de Nike como a todos nuestros clientes mayoristas en el país.",
             "infra-badge2": "Operaciones",
             "infra-title2": "Nuestras Oficinas",
             "infra-desc2": "Centros estratégicos desde donde nuestro equipo directivo coordina el futuro de la marca.",
@@ -113,9 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "dir-title": "Los que <span>Dirigen</span>",
             "dir-desc": "Nuestro Directorio Ejecutivo guiando el rumbo de Zavidoro Corporation.",
             "dir-pres": "Presidente",
-            "dir-fin": "Vicepresidenta Financiera y Administrativa",
-            "dir-sales": "Vicepresidente de Ventas",
-            "dir-stores": "Vicepresidente de Tiendas",
+            "dir-fin": "Directora Administrativa y Financiera",
+            "dir-sales": "Director de Tecnología e Innovación",
+            "dir-stores": "Director Comercial",
             "store-city1": "Asunción:",
             "store-dist": "Distrito:",
             "store-sol": "Sol:",
@@ -166,13 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "val-8": "Quality",
             "stores-title": "Our <span>Nike Stores</span>",
             "stores-desc": "National presence with strategic locations under the latest global brand concepts.",
-            "infra-badge1": "Distribution Centers",
-            "infra-title1": "Our Warehouses",
-            "infra-desc1": "Top-level logistics capacity aimed at efficiently supplying all our Nike branches in the country.",
-            "infra-dep1": "Zavidoro Warehouse",
-            "infra-dep2": "Fiscal Warehouse",
-            "infra-dep3": "Chaco'i Warehouse",
-            "infra-dep4": "Zavidoro Reserve Warehouse",
+            "infra-title1": "Logistics",
+            "infra-desc1": "Top-level logistics capacity aimed at efficiently supplying both all our Nike branches and all our wholesale clients in the country.",
             "infra-badge2": "Operations",
             "infra-title2": "Our Offices",
             "infra-desc2": "Strategic centers from which our executive team coordinates the future of the brand.",
@@ -181,9 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "dir-title": "Those Who <span>Lead</span>",
             "dir-desc": "Our Executive Board guiding the course of Zavidoro Corporation.",
             "dir-pres": "President",
-            "dir-fin": "Financial & Admin Vice President",
-            "dir-sales": "Sales Vice President",
-            "dir-stores": "Stores Vice President",
+            "dir-fin": "Chief Administrative and Financial Officer",
+            "dir-sales": "Chief Technology and Innovation Officer",
+            "dir-stores": "Chief Commercial Officer",
             "store-city1": "Asuncion:",
             "store-dist": "District:",
             "store-sol": "Sol:",
@@ -259,6 +249,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupModal('office-asu', 'modal-legal-asu');
     setupModal('office-cde', 'modal-legal-cde');
+    setupModal('foot-office-asu', 'modal-legal-asu');
+    setupModal('foot-office-cde', 'modal-legal-cde');
 
     // Close buttons logic
     document.querySelectorAll('.close-modal').forEach(btn => {

@@ -15,6 +15,7 @@
         rel="stylesheet">
 
     <!-- Icons -->
+    <link rel="icon" type="image/png" href="zavidoro.PNG">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- CSS -->
@@ -37,7 +38,7 @@
                 <li><a href="#nosotros" data-i18n="nav-about">Nosotros</a></li>
                 <li><a href="#tiendas" data-i18n="nav-stores">Tiendas Nike</a></li>
                 <li><a href="#infraestructura" data-i18n="nav-infra">Infraestructura</a></li>
-                <li><a href="#directorio" data-i18n="nav-dir">Directorio</a></li>
+                <!-- <li><a href="#directorio" data-i18n="nav-dir">Directorio</a></li> -->
             </ul>
         </nav>
 
@@ -192,20 +193,9 @@
     <section class="infrastructure section-padding" id="infraestructura">
         <div class="container layout-grid-2 align-start">
             <div class="infra-block">
-                <div class="section-badge dark-badge" data-i18n="infra-badge1">Centros de Distribución</div>
-                <h2 data-i18n="infra-title1">Nuestros Depósitos</h2>
+                <h2 data-i18n="infra-title1">Logística</h2>
                 <p data-i18n="infra-desc1">Capacidad logística de primer nivel orientada a abastecer de manera eficiente
-                    todas nuestras
-                    sucursales de Nike en el país.</p>
-                <div class="infra-list-wrapper">
-                    <ul>
-                        <li><i class="fas fa-warehouse"></i> <span data-i18n="infra-dep1">Depósito Zavidoro</span></li>
-                        <li><i class="fas fa-warehouse"></i> <span data-i18n="infra-dep2">Depósito Fiscal</span></li>
-                        <li><i class="fas fa-warehouse"></i> <span data-i18n="infra-dep3">Depósito Chaco'i</span></li>
-                        <li><i class="fas fa-warehouse"></i> <span data-i18n="infra-dep4">Depósito de Reservas
-                                Zavidoro</span></li>
-                    </ul>
-                </div>
+                    tanto a todas nuestras sucursales de Nike como a todos nuestros clientes mayoristas en el país.</p>
             </div>
 
             <div class="infra-block bg-accent">
@@ -228,7 +218,7 @@
         </div>
     </section>
 
-    <!-- Directorio -->
+    <!-- Directorio (Oculto temporalmente)
     <section class="directory section-padding" id="directorio">
         <div class="container">
             <div class="section-title">
@@ -239,27 +229,28 @@
             <div class="directors-grid">
                 <div class="director-card">
                     <div class="dir-avatar">V/R</div>
-                    <h3>Sr. Verlyn Ray</h3>
+                    <h3>Sr. Verlin Ray</h3>
                     <p class="dir-title" data-i18n="dir-pres">Presidente</p>
-                </div>
-                <div class="director-card">
-                    <div class="dir-avatar">L/B</div>
-                    <h3>Sra. Liliana Barboza</h3>
-                    <p class="dir-title" data-i18n="dir-fin">Financial & Admin Vice President</p>
                 </div>
                 <div class="director-card">
                     <div class="dir-avatar">M/R</div>
                     <h3>Sr. Maximilian Ray</h3>
-                    <p class="dir-title" data-i18n="dir-sales">Sales Vice President</p>
+                    <p class="dir-title" data-i18n="dir-sales">Director de Tecnología e Innovación</p>
                 </div>
                 <div class="director-card">
                     <div class="dir-avatar">A/R</div>
                     <h3>Sr. Alex Ray</h3>
-                    <p class="dir-title" data-i18n="dir-stores">Stores Vice President</p>
+                    <p class="dir-title" data-i18n="dir-stores">Director Comercial</p>
+                </div>
+                <div class="director-card">
+                    <div class="dir-avatar">L/B</div>
+                    <h3>Sra. Liliana Barboza</h3>
+                    <p class="dir-title" data-i18n="dir-fin">Directora Administrativa y Financiera</p>
                 </div>
             </div>
         </div>
     </section>
+    -->
 
     <!-- Footer -->
     <footer id="contacto">
@@ -274,15 +265,15 @@
                 <ul>
                     <li><a href="#nosotros" data-i18n="foot-l1">Historia</a></li>
                     <li><a href="#tiendas" data-i18n="nav-stores">Tiendas Nike</a></li>
-                    <li><a href="#directorio" data-i18n="nav-dir">Directorio</a></li>
+                    <!-- <li><a href="#directorio" data-i18n="nav-dir">Directorio</a></li> -->
                 </ul>
             </div>
 
             <div class="footer-links">
                 <h4 data-i18n="foot-h2">Contactos Principales</h4>
                 <ul>
-                    <li data-i18n="foot-l4">Oficina Central Asunción</li>
-                    <li data-i18n="foot-l5">Oficina CDE</li>
+                    <li data-i18n="foot-l4" id="foot-office-asu" style="cursor: pointer;">Oficina Central Asunción</li>
+                    <li data-i18n="foot-l5" id="foot-office-cde" style="cursor: pointer;">Oficina CDE</li>
                 </ul>
             </div>
 
@@ -307,13 +298,19 @@
     <div id="modal-legal-asu" class="modal">
         <div class="modal-content">
             <span class="close-modal" data-modal="modal-legal-asu">&times;</span>
-            <h2 data-i18n="legal-title" style="margin-bottom: 25px; color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px;">DATOS LEGALES</h2>
+            <h2 data-i18n="legal-title"
+                style="margin-bottom: 25px; color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px;">
+                DATOS LEGALES</h2>
             <div class="legal-info">
-                <p><strong><span data-i18n="legal-name">Razón Social</span>:</strong> Zavidoro Corporation (Sucursal Paraguay)</p>
-                <p><strong>RUC:</strong> 80022115</p>
-                <p><strong><span data-i18n="legal-address">Dirección</span>:</strong> Ernesto Guevara c/ Gua'a Hovy N°2482, Asunción, Paraguay</p>
-                <p><strong><span data-i18n="legal-email">Correo</span>:</strong> <a href="mailto:set@zavidoro.com.py">set@zavidoro.com.py</a></p>
-                <p><strong><span data-i18n="legal-phone">Teléfono</span>:</strong> <a href="tel:+59521900095">+595 21 900095</a></p>
+                <p><strong><span data-i18n="legal-name">Razón Social</span>:</strong> Zavidoro Corporation (Sucursal
+                    Paraguay)</p>
+                <p><strong>RUC:</strong> 80022115-0</p>
+                <p><strong><span data-i18n="legal-address">Dirección</span>:</strong> Ernesto Guevara c/ Gua'a Hovy
+                    N°2482, Asunción, Paraguay</p>
+                <p><strong><span data-i18n="legal-email">Correo</span>:</strong> <a
+                        href="mailto:set@zavidoro.com.py">set@zavidoro.com.py</a></p>
+                <p><strong><span data-i18n="legal-phone">Teléfono</span>:</strong> <a href="tel:+59521900095">+595 21
+                        900095</a></p>
             </div>
         </div>
     </div>
@@ -322,13 +319,19 @@
     <div id="modal-legal-cde" class="modal">
         <div class="modal-content">
             <span class="close-modal" data-modal="modal-legal-cde">&times;</span>
-            <h2 data-i18n="legal-title" style="margin-bottom: 25px; color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px;">DATOS LEGALES</h2>
+            <h2 data-i18n="legal-title"
+                style="margin-bottom: 25px; color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px;">
+                DATOS LEGALES</h2>
             <div class="legal-info">
-                <p><strong><span data-i18n="legal-name">Razón Social</span>:</strong> Zavidoro Corporation (Sucursal Paraguay)</p>
+                <p><strong><span data-i18n="legal-name">Razón Social</span>:</strong> Zavidoro Corporation (Sucursal
+                    Paraguay)</p>
                 <p><strong>RUC:</strong> 80022115-0</p>
-                <p><strong><span data-i18n="legal-address">Dirección</span>:</strong> Avenida San Blas, Shopping Jardin - Primer piso, Ciudad del Este, Paraguay</p>
-                <p><strong><span data-i18n="legal-email">Correo</span>:</strong> <a href="mailto:set@zavidoro.com.py">set@zavidoro.com.py</a></p>
-                <p><strong><span data-i18n="legal-phone">Teléfono</span>:</strong> <a href="tel:+59521900095">+595 21 900095</a></p>
+                <p><strong><span data-i18n="legal-address">Dirección</span>:</strong> Avenida San Blas, Shopping Jardin
+                    - Primer piso, Ciudad del Este, Paraguay</p>
+                <p><strong><span data-i18n="legal-email">Correo</span>:</strong> <a
+                        href="mailto:set@zavidoro.com.py">set@zavidoro.com.py</a></p>
+                <p><strong><span data-i18n="legal-phone">Teléfono</span>:</strong> <a href="tel:+59521900095">+595 21
+                        900095</a></p>
             </div>
         </div>
     </div>

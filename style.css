@@ -655,6 +655,16 @@ footer {
         background-color: var(--primary);
     }
 
+    /* Fix: Mobile links visibility on dark background when scrolled */
+    header.scrolled .nav-links a {
+        color: var(--secondary);
+    }
+
+    /* Fix: Hamburger visibility when menu is open and scrolled */
+    header.scrolled .hamburger.toggle div {
+        background-color: var(--secondary);
+    }
+
     .lang-selector {
         display: none;
     }
